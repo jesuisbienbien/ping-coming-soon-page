@@ -274,7 +274,7 @@ main {
     font-size: 3rem;
   }
   .form {
-    width: 80%;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,6 +320,9 @@ main {
     font-size: 1rem;
     padding: 1rem 0;
     margin: 0;
+  }
+  .illustration {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

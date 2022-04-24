@@ -13,12 +13,19 @@ const validateEmail = (email) => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
    if(!(validateEmail(userInput.value)) | userInput.value===""){
-        userInput.classList.add("error-outline");
+       if(userInput.value===""){
+           error.innerHTML="Whoops! It looks like you forgot to add your email";
+       }else {
+           error.innerHTML="Please provide a valid email address";
+       }
        error.classList.remove("hidden");
+       userInput.classList.add("error-outline");
+
    } else {
-    alert("Congratulations! You have successfully subscribed.");
-    userInput.value="";
     userInput.classList.remove("error-outline");
     error.classList.add("hidden");
+    userInput.value="";
+    alert("Congratulations! You have successfully subscribed.");
+    
    }
 })
