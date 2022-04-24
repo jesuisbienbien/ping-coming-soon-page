@@ -1,0 +1,325 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 70%;
+}
+
+.logo {
+  width: 15%;
+  margin-top: 5rem;
+}
+
+.header {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+
+.header span {
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.subscribe {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.form {
+  width: 70%;
+}
+
+.email-error-container {
+  width: 100%;
+  text-align: center;
+}
+
+.email {
+  width: 100%;
+  outline: none;
+  border-radius: 2rem;
+  border: solid 1px var(--pale-blue);
+  padding: 0.9rem 0 0.8rem 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.email::-webkit-input-placeholder {
+  color: var(--gray);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.email:-ms-input-placeholder {
+  color: var(--gray);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.email::-ms-input-placeholder {
+  color: var(--gray);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.email::placeholder {
+  color: var(--gray);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.error-outline {
+  outline: none;
+  border: solid 1px var(--light-red);
+}
+
+.error {
+  color: var(--light-red);
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: var(--blue);
+  font-size: 0.75rem;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 0;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-top: 0.5rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.illustration {
+  width: 80%;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.social-media {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  border-radius: 50%;
+  border: solid 1px var(--pale-blue);
+  padding: 0.5rem;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon img {
+  height: 0.8rem;
+  width: 0.8rem;
+  -webkit-filter: invert(55%) sepia(49%) saturate(6456%) hue-rotate(209deg) brightness(100%) contrast(91%);
+          filter: invert(55%) sepia(49%) saturate(6456%) hue-rotate(209deg) brightness(100%) contrast(91%);
+}
+
+.icon:hover {
+  background-color: var(--blue);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.icon:hover img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(222deg) brightness(115%) contrast(100%);
+          filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(222deg) brightness(115%) contrast(100%);
+}
+
+.copyright {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--gray);
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: var(--pale-blue);
+}
+
+@media (min-width: 545px) {
+  body {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 15%;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .form {
+    width: 60%;
+  }
+  .email {
+    padding: 1rem 2rem;
+  }
+  .email::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .email:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .email::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .email::placeholder {
+    font-size: 1rem;
+  }
+  .submit-button {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .icon img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 1.25rem;
+  }
+  .logo {
+    width: 8%;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .form {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+  }
+  .email-error-container {
+    width: 70%;
+    text-align: left;
+  }
+  .email {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 1.2rem 0 0.8rem 2rem;
+  }
+  .error {
+    padding-left: 2rem;
+  }
+  .email::-webkit-input-placeholder {
+    font-size: 1.1rem;
+  }
+  .email:-ms-input-placeholder {
+    font-size: 1.1rem;
+  }
+  .email::-ms-input-placeholder {
+    font-size: 1.1rem;
+  }
+  .email::placeholder {
+    font-size: 1.1rem;
+  }
+  .submit-button {
+    width: 30%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

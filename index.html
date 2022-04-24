@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="images/logo.svg" alt="logo ping" />
+
+      <h1 class="header"><span>We are launching</span> soon!</h1>
+      <p class="subscribe">Subscribe and get notified</p>
+
+      <form class="form" id="form">
+        <div class="email-error-container">
+          <input
+            class="email"
+            id="email"
+            type="email"
+            placeholder="Your email address..."
+          />
+          <small id="error" class="error hidden"
+            >Please provide a valid email address</small
+          >
+        </div>
+
+        <input class="submit-button" type="submit" value="Notify Me" />
+      </form>
+
+      <img
+        src="images/illustration-dashboard.png"
+        alt=""
+        class="illustration"
+      />
+
+      <div class="social-media">
+        <div class="icon">
+          <img src="images/facebook-f-brands.svg" alt="facebook" />
+        </div>
+        <div class="icon">
+          <img src="images/twitter-brands.svg" alt="twitter" />
+        </div>
+        <div class="icon">
+          <img src="images/instagram-brands.svg" alt="instagram" />
+        </div>
+      </div>
+
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nguyen Nguyen</a>.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
