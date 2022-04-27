@@ -173,11 +173,11 @@ main {
     width: 15%;
   }
   .header {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .form {
-    width: 60%;
+    width: 80%;
   }
 
   .email {
@@ -232,6 +232,7 @@ main {
 
   .error {
     padding-left: 2rem;
+    margin-top: 0.5rem;
   }
 
   .email::placeholder {
